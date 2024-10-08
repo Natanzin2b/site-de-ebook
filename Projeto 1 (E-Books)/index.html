@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AluraBooks</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header class="cabeçalho">
+    <div class="container">
+      <input type="checkbox" id="menu" class="container__botao">
+      <label for="menu">
+        <span class="cabeçalho__menu-hamburguer container__imagem"></span>
+      </label>
+      <ul class="lista-menu">
+        <li class="lista-menu__titulo">Categorias</li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Romance</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Aventura</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Drama</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">HQ's</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Terror</a>
+        </li>
+      </ul>
+      <img src="img/Logo.svg" alt="Logo da Alurabooks" class="container__imagem">
+    </div>
+    <div class="container">
+      <a href="#"><img src="img/Favoritos.svg" alt="Meus favoritos" class="container__imagem"></a>
+      <a href="#"><img src="img/Compras.svg" alt="Carrinhos de compras" class="container__imagem"></a>
+      <a href="#"><img src="img/Usuario.svg" alt="Meu perfil" class="container__imagem"></a>
+    </div>
+  </header>
+
+  <section class="banner">
+    <h2 class="banner__titulo">E-BookXplorer</h2>
+    <p class="banner__texto">Encontre em nossa book shelf o os seus livros favoritos!</p>
+    <input type="search" class="banner__pesquisa" placeholder="Encontre seu próximo livro favorito...">
+  </section>
+
+  <section class="carrossel">
+    <h2 class="carrossel__titulo">Lançamentos de Outubro/2024</h2>
+    <!-- Slider main container -->
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide"><img src="https://m.media-amazon.com/images/I/8137t6aR6+L._AC_UF1000,1000_QL80_.jpg"
+            alt="Livro sobre apache kafka e spring boot da alura books"></div>
+        <div class="swiper-slide"><img src="https://editoraaleph.com.br/cdn/shop/files/alp_capas700x100_Site_oastronauta.png?v=1715027905&width=700"
+            alt="Livro sobre liderança em design design da alura books"></div>
+        <div class="swiper-slide"><img src="https://img.ibxk.com.br/2023/12/28/28155447135010.jpg?ims=704x">
+        </div>
+        <div class="swiper-slide">
+          <img src="img/Guia Front-end.svg" alt="Livro Guia front end" />
+        </div>
+        <div class="swiper-slide">
+          <img src="img/Portugol.svg" alt="Livro sobre portugol" />
+        </div>
+        <div class="swiper-slide">
+          <img src="img/Acessibilidade.svg" alt="Livro sobre acessibilidade" />
+        </div>
+      </div>
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+
+    </div>
+
+    <div class="card">
+      <div class="card__descrição">
+        <div class="descrição">
+          <h3 class="descrição__titulo">Talvez você também se interesse por...</h3>
+          <h2 class="descrição__titulo-livro">𝓒𝓸𝓷𝓽𝓸 𝓭𝓮 𝓕𝓪𝓷𝓽𝓪𝓼𝓶𝓪𝓼</h2>
+          <p class="descrição__texto">
+            Defoe acreditava na reencarnação e escreveu estes 'Contos de fantasmas' baseado em entrevistas ou relatos conhecidos. Segundo ele, os episódios relacionados - com exceção dos que estão agrupados sob o título de 'Falsos fantasmas' - são todos verdadeiros e, em alguns deles, ele estaria disposta a ir em juízo, levando testemunhas e provas concretas.
+
+
+          </p>
+        </div>
+        <img src="https://livrofacil.vteximg.com.br/arquivos/ids/205494-256-256/9788525406071.jpg?v=636837020722230000" class="descrição__imagem" />
+      </div>
+      <div class="card__botões">
+        <ul class="botões">
+          <li class="botões__item">
+            <img src="img/Favoritos.svg" alt="Favoritar livro" />
+          </li>
+          <li class="botões__item">
+            <img src="img/Compras.svg" alt="Adicionar no carrinho de compras" />
+          </li>
+        </ul>
+        <a href="#" class="botões__ancora">Ler agora</a>
+      </div>
+    </div>
+
+  </section>
+
+  <section class=”carrossel”>
+    <h2 class="carrossel__titulo">Mais vendidos</h2>
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide"><img src="https://m.media-amazon.com/images/I/81BdpMhm3iL._AC_UF1000,1000_QL80_.jpg"
+            alt="Livro sobre apache kafka e spring boot da alura books"></div>
+        <div class="swiper-slide"><img src="https://m.media-amazon.com/images/I/81iqH8dpjuL._AC_UF1000,1000_QL80_.jpg" alt="Livro sobre liderança em design da alura books">
+        </div>
+        <div class="swiper-slide"><img src="https://m.media-amazon.com/images/I/71le+knk+oL._UF894,1000_QL80_.jpg" alt="Livro sobre javascript assertivo da alurabooks">
+        </div>
+        <div class="swiper-slide"><img src="img/Guia Front-end.svg" alt="Livro Guia front end"></div>
+        <div class="swiper-slide"><img src="img/Portugol.svg" alt="Livro sobre portugol"></div>
+        <div class="swiper-slide"><img src="img/Acessibilidade.svg" alt="livro sobre acessibilidade"></div>
+      </div>
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+
+    <div class="card">
+      <!-- 1º linha -->
+      <div class="card__descrição">
+        <!-- 1º coluna -->
+        <div class="descrição">
+          <img src="img/Estrelinhas.svg" alt="Avaliação 5 estrelas">
+          <h3 class="descrição__titulo">Autor mais acessado do mês</h3>
+          <h2 class="descrição__titulo-livro">William Shakespeare</h2>
+          <p class="descrição__texto">William Shakespeare (1564-1616) foi um dramaturgo e poeta inglês. Autor de tragédias famosas como "Hamlet", "Otelo", "Macbeth" e "Romeu e Julieta", foi considerado uma das maiores figuras literárias da língua inglesa.
+
+            Shakespeare escreveu suas obras para um pequeno teatro no final do século XVI e início do XVII. Quatrocentos anos mais tarde suas peças ainda encantavam plateias em todo o mundo.
+            
+            William Shakespeare nasceu em Stratford-upon-Avon, no condado de Warwick, Inglaterra, no dia 23 de abril de 1564. Filho de John Shakespeare e de Mary Arden, seu pai foi comerciante de lã e chegou a tesoureiro e prefeito de Stratford.
+          </p>
+        </div>
+        <!-- 2º coluna -->
+        <img src="https://s.ebiografia.com/assets/img/authors/wi/ll/william-shakespeare-l.jpg?auto_optimize=low&width=255" class="descrição__imagem">
+      </div>
+
+      <!-- 2º linha -->
+      <div class="card__botões">
+        <!-- 1º coluna -->
+        <ul class="botões">
+          <li class="botões__item"><img src="img/Favoritos.svg" alt="Favoritar livro"></li>
+          <li class="botões__item"><img src="img/Compras.svg" alt="Adicionar no carrinho de compras"></li>
+        </ul>
+        <!-- 2º coluna -->
+        <a href="#" class="botões__ancora">Saiba mais</a>
+      </div>
+    </div>
+
+
+
+  </section>
+
+  <section class="tópicos">
+    <h2 class="tópicos__titulo">TÓPICOS VISITADOS RECENTEMENTE</h2>
+    <ul class="tópicos__lista">
+      <li class="tópicos__item"><a href="#" class="tópicos__link">Literatura</a></li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Poesia Contemporânea</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Ficção
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Fantasia</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Romance</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Mistério</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Suspense</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">HQ's</a>
+      </li>
+    </ul>
+  </section>
+
+  <section class="contato">
+    <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
+    <p class="contato__texto">
+      Cadastre-se e receba as novidades pelo seu e-mail
+    </p>
+    <input type="email" placeholder="Cadastar e-mail" class="contato__email" />
+  </section>
+
+  <hr />
+
+  <footer class="rodapé">
+    <h2 class="rodapé__titulo">NATANZIN®</h2>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper(".swiper", {
+      spaceBetween: 10,
+      slidesPerView: 3,
+      pagination: {
+        el: ".swiper-pagination",
+        type: "bullets",
+      },
+    });
+  </script>
+</body>
+
+</html>
